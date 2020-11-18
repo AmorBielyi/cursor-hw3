@@ -20,7 +20,7 @@ public class StrangeMoney {
     }
 
     public void printPrettyMoney() {
-        System.out.printf("Your money are: %s,%d UAH\n", bills, coins);
+        System.out.printf("Your money is: %s,%d UAH\n", bills, coins);
     }
 
     public long getSum() {
