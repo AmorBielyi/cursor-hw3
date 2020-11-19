@@ -1,5 +1,6 @@
 package org.romanbielyi;
 
+import java.math.BigDecimal;
 import java.util.SortedMap;
 
 public class HomeWorkThree {
@@ -21,28 +22,26 @@ public class HomeWorkThree {
 
         // Task 3
         System.out.println("TASK #3: car");
-        Car car = new Car();
+        Car car = new Car("BMW");
         car.turnOnCarEngine();
-        car.setSpeed(65.5f, false);
+        car.increaseSpeed(65.5f);
         car.showCarStatus();
-        car.setSpeed(110.5f, true);
+        car.decreaseSpeed(31);
+        car.showCarStatus();
+        car.decreaseSpeed(50);
+        car.showCarStatus();
+        car.increaseSpeed(15.8f);
+        car.showCarStatus();
+        car.increaseSpeed(100);
+        car.showCarStatus();
+        car.increaseSpeed(80);
+        car.showCarStatus();
+        car.decreaseSpeed(180);
+        car.showCarStatus();
+        car.stop();
         car.showCarStatus();
         car.turnOffCarEngine();
-        car.turnOnCarEngine();
-        car.setSpeed(133, false);
-        car.turnOnCarEngine();
-        car.setSpeed(195, false);
-        car.turnOffCarEngine();
-        car.stop();
-        car.showCarStatus();
-        car.turnOnCarEngine();
-        car.showCarStatus();
-        car.stop();
-        car.setSpeed(45, false);
-        car.showCarStatus();
-        car.stop();
-        car.showCarStatus();
-        car.stop();
+
 
         //Task 4
         System.out.println("TASK #4");
@@ -59,7 +58,7 @@ public class HomeWorkThree {
 
         //Task 5
         System.out.println("TASK #5");
-        double money = 1024.73;
+        double money = 1024.0008;
         StrangeMoney strangeMoney = new StrangeMoney(money);
         strangeMoney.printPrettyMoney();
         System.out.printf("The sum of the money is: %d\n", strangeMoney.getSum());
