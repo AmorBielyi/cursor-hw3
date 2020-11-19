@@ -6,7 +6,7 @@ public class Car {
     private float speed;
     private String model;
 
-    public Car(String model){
+    public Car(String model) {
         this.model = model;
     }
 
@@ -16,7 +16,6 @@ public class Car {
             System.out.println("The engine has been started and is now running");
         } else
             System.out.println("The engine is already running, no need to start it again");
-
     }
 
     public void turnOffCarEngine() {
@@ -46,16 +45,16 @@ public class Car {
 
     }
 
-    public void decreaseSpeed(float v){
+    public void decreaseSpeed(float v) {
         if (!isEngineRunning)
             System.out.println("Can't decrease speed. The engine is turned off");
         if (v > 180)
             System.out.println("Maximum speed exceeded!! The speed value must be <= 180");
         else if (v <= 0)
             System.out.println("Can't decrease speed by zero or negative value. Please provide a valid value");
-        if (speed != 0.0f )
+        if (speed != 0.0f)
             this.speed -= v;
-        if (speed < 0){
+        if (speed < 0) {
             speed = 0.0f;
         }
     }
@@ -67,7 +66,6 @@ public class Car {
             } else {
                 System.out.println("Can't stop. The car is stopped now");
             }
-
         } else {
             System.out.println("Can't stop. The engine is turned off");
         }
@@ -80,10 +78,8 @@ public class Car {
                 return;
             }
             System.out.printf("The %s is moving now with speed %.3f km/h\n", model, speed);
-
         } else
             System.out.printf("The %s is not started now\n", model);
-
     }
 
 
